@@ -3,11 +3,7 @@
 
 图片显示规则类似微信朋友圈的排列
 
-原项目：https://github.com/Naoki2015/CircleDemo
 
 # 后注
 在原项目的基础上简单的修改一下项目中一些方法名的命名，以便于个人的阅读习惯。
 
-![image](https://github.com/Naoki2015/CircleDemo/blob/master/CircleDemo/imgs/01.png)
-![image](https://github.com/Naoki2015/CircleDemo/blob/master/CircleDemo/imgs/02.png)
-![image](https://github.com/Naoki2015/CircleDemo/blob/master/CircleDemo/imgs/03.png)
