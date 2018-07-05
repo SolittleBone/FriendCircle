@@ -195,7 +195,7 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         holder.deleteBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                //删除
+                //删除当前的的动态
                 mPresenter.deleteCircle(circleId);
             }
         });
@@ -368,7 +368,7 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         public void onItemClick(ActionItem actionitem, int position) {
             switch (position) {
                 case 0://点赞、取消点赞
-                    if (System.currentTimeMillis() - mLasttime < 700)//防止快速点击操作
+                    if (System.currentTimeMillis() - mLasttime < 700)       //防止快速点击操作
                         return;
                     mLasttime = System.currentTimeMillis();
                     if ("赞".equals(actionitem.mTitle.toString())) {
