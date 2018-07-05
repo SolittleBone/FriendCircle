@@ -16,7 +16,7 @@ import java.io.File;
 * @ClassName: MyApplication 
 * @Description: TODO(这里用一句话描述这个类的作用) 
 * @author guzhaolei
-* @date 2015-12-28 下午4:21:08 
+* @date 2018-7-1 下午4:21:08
 *
  */
 public class MyApplication extends Application {

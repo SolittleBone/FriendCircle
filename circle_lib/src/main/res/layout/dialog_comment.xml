@@ -5,6 +5,10 @@
     android:background="@android:color/white"
     android:orientation="vertical" >
 
+    <!--
+    @author 陈露
+    @Description: 朋友圈动态长按评论的弹出框
+    -->
     <TextView
         android:id="@+id/copyTv"
         android:layout_width="match_parent"

@@ -32,7 +32,7 @@ import java.util.List;
  * @author guzhaolei
  * @ClassName: CommentAdapter
  * @Description: 评论的adapter
- * @date 2015-12-28 下午3:40:29
+ * @date 2018-7-1 下午3:40:29
  */
 public class CommentAdapter extends BaseAdapter {
 

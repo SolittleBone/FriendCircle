@@ -4,12 +4,17 @@ import java.util.List;
 
 import android.text.TextUtils;
 
-
+/**
+ *
+ * @ClassName: CircleItem
+ * @Description: 朋友圈动态的实体类
+ * @author guzhaolei
+ * @date 2018-7-1 下午3:44:29
+ *
+ */
 public class CircleItem extends BaseBean{
 
-	/**
-	 * 
-	 */
+
 	private static final long serialVersionUID = 1L;
 
 	private String id;

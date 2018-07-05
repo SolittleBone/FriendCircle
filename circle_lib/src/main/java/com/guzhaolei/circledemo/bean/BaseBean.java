@@ -4,9 +4,9 @@ import java.io.Serializable;
 /**
  * 
 * @ClassName: BaseBean 
-* @Description: TODO(这里用一句话描述这个类的作用) 
+* @Description: 构造序列化基类
 * @author guzhaolei
-* @date 2015-12-28 下午3:44:29 
+* @date 2018-7-1 下午3:44:29
 *
  */
 public class BaseBean implements Serializable{

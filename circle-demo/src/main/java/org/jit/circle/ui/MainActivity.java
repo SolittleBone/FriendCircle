@@ -36,7 +36,7 @@ import java.util.List;
  * @author guzhaolei
  * @ClassName: MainActivity
  * @Description: TODO(这里用一句话描述这个类的作用)
- * @date 2015-12-28 下午4:21:18
+ * @date 2018-7-1 下午4:21:18
  */
 public class MainActivity extends Activity implements OnRefreshListener, HeightComputable {
 

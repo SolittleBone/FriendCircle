@@ -9,7 +9,7 @@ import android.widget.AbsListView.OnScrollListener;
  * @author guzhaolei
  * @ClassName: SwipeListViewOnScrollListener
  * @Description: 解决SwipeRefreshLayout和listview的滑动冲突事件
- * @date 2015-12-28 下午4:17:48
+ * @date 2018-7-1 下午4:17:48
  */
 public class SwipeListViewOnScrollListener implements AbsListView.OnScrollListener {
 

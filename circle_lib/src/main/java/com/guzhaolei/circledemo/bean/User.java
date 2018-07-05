@@ -2,15 +2,17 @@ package com.guzhaolei.circledemo.bean;
 /**
  * 
 * @ClassName: User 
-* @Description: TODO(这里用一句话描述这个类的作用) 
+* @Description: 用户的实体类
 * @author guzhaolei
-* @date 2015-12-28 下午3:45:04 
+* @date 2018-7-1 下午3:45:04
 *
  */
 public class User {
 	private String id;
 	private String name;
-	private String headUrl;
+	private String headUrl;				//头像路径
+
+
 	public User(String id, String name, String headUrl){
 		this.id = id;
 		this.name = name;

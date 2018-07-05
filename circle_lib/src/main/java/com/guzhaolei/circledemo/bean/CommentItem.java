@@ -4,17 +4,19 @@ import java.io.Serializable;
 /**
  * 
 * @ClassName: CommentItem 
-* @Description: TODO(这里用一句话描述这个类的作用) 
+* @Description: 朋友圈评论的实体类
 * @author guzhaolei
-* @date 2015-12-28 下午3:44:38 
+* @date 2018-7-1 下午3:44:38
 *
  */
 public class CommentItem implements Serializable{
 
 	private String id;
 	private User user;
-	private User toReplyUser;
-	private String content;
+	private User toReplyUser;		//评论用户
+	private String content;			//评论内容
+
+
 	public String getId() {
 		return id;
 	}

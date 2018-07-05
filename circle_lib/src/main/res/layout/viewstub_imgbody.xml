@@ -3,6 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content" >
 
+    <!--
+    @author
+    @Description: 显示1~N张图片的View，自定义的控件
+    -->
+
     <com.guzhaolei.circledemo.widgets.MultiImageView
         android:id="@+id/multiImagView"
         android:layout_width="match_parent"

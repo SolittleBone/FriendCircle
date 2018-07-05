@@ -7,8 +7,8 @@ import android.view.inputmethod.InputMethodManager;
 /**
  * @author guzhaolei
  * @ClassName: CommonUtils
- * @Description:
- * @date 2015-12-28 下午4:16:01
+ * @Description: 创建评论的工具类
+ * @date 2018-7-1 下午4:16:01
  */
 public class CommonUtils {
     public static int keyboardHeight = 0;

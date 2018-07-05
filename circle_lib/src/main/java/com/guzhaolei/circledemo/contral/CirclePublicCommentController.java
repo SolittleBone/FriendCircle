@@ -19,7 +19,7 @@ import com.guzhaolei.circledemo.widgets.AppNoScrollerListView;
  * @author guzhaolei
  * @ClassName: CirclePublicCommentController
  * @Description: 控制EdittextView的显示和隐藏，以及发布动作，根据回复的位置调整listview的位置
- * @date 2015-12-28 下午3:45:21
+ * @date 2018-7-1 下午3:45:21
  */
 public class CirclePublicCommentController {
     private static final String TAG = CirclePublicCommentController.class.getSimpleName();

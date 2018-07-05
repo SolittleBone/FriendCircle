@@ -6,7 +6,7 @@ import com.guzhaolei.circledemo.bean.User;
 * @ClassName: ICircleViewUpdateListener 
 * @Description: view,服务器响应后更新界面 
 * @author guzhaolei
-* @date 2015-12-28 下午4:13:04 
+* @date 2018-7-1 下午4:13:04
 *
  */
 public interface ICircleViewUpdate {

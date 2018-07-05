@@ -20,7 +20,7 @@ import com.guzhaolei.circledemo.utils.DatasUtil;
  * @author guzhaolei
  * @ClassName: CommentDialog
  * @Description: 评论长按对话框，保护复制和删除
- * @date 2015-12-28 下午3:36:39
+ * @date 2018-7-1 下午3:36:39
  */
 public class CommentDialog extends Dialog implements
         android.view.View.OnClickListener {

@@ -9,7 +9,7 @@ import com.guzhaolei.circledemo.mvp.view.ICircleViewUpdate;
 * @ClassName: CirclePresenter 
 * @Description: 通知model请求服务器和通知view更新
 * @author guzhaolei
-* @date 2015-12-28 下午4:06:03 
+* @date 2018-7-1 下午4:06:03
 *
  */
 public class CirclePresenter {

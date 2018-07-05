@@ -19,7 +19,7 @@ import java.util.ArrayList;
 /**
  * 朋友圈点赞评论的popupwindow
  *
- * @author wei.yi
+ * @author guzhaolei
  */
 public class SnsPopupWindow extends PopupWindow implements OnClickListener {
 

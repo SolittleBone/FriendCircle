@@ -14,9 +14,9 @@ import com.guzhaolei.circledemo.utils.DensityUtil;
 import java.util.List;
 
 /**
- * @author shoyu
+ * @author guzhaolei
  * @ClassName MultiImageView.java
- * @Description: 显示1~N张图片的View
+ * @Description: 显示1~N张图片的View，自定义控件继承LinearLayout类
  */
 
 public class MultiImageView extends LinearLayout {

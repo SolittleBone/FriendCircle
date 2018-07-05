@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 * @ClassName: ActionItem 
 * @Description: 弹窗内部子类项（绘制标题和图标） 
 * @author guzhaolei
-* @date 2015-12-28 下午3:43:30 
+* @date 2018-7-1 下午3:43:30
 *
  */
 public class ActionItem {

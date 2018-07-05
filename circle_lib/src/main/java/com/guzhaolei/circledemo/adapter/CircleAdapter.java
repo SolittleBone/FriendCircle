@@ -41,7 +41,7 @@ import java.util.List;
  * @author guzhaolei
  * @ClassName: CircleAdapter
  * @Description: 圈子列表的adapter
- * @date 2015-12-28 上午09:37:23
+ * @date 2018-7-1 上午09:37:23
  */
 public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
     private static final int ITEM_VIEW_TYPE_DEFAULT = 0;
