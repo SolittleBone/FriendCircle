@@ -5,23 +5,26 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
 /**
- * @author guzhaolei
+ * @author chuqian
  * @ClassName: CommonUtils
- * @Description: 创建评论的工具类
+ * @Description: 控制评论时候键盘输入框的显示与隐藏
  * @date 2018-7-1 下午4:16:01
  */
 public class CommonUtils {
     public static int keyboardHeight = 0;
 
+    //显示键盘的输入框
     public static void showSoftInput(Context context, View view) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
-        //imm.showSoftInput(view, InputMethodManager.SHOW_FORCED);
     }
 
+    //隐藏键盘的输入框
     public static void hideSoftInput(Context context, View view) {
         InputMethodManager imm = (InputMethodManager) context.getSystemService(Context.INPUT_METHOD_SERVICE);
-        imm.hideSoftInputFromWindow(view.getWindowToken(), 0); //强制隐藏键盘
+
+        //强制隐藏键盘
+        imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
     public static boolean isShowSoftInput(Context context) {
