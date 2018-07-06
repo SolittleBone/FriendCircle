@@ -79,6 +79,11 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         mPresenter = new CirclePresenter(this);
     }
 
+    /**
+     * 获取某一个item的动态类型（图片或者分享链接）
+     * @param position
+     * @return
+     */
     @Override
     public int getItemViewType(int position) {
         int itemType = ITEM_VIEW_TYPE_DEFAULT;
@@ -113,6 +118,14 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         return position;
     }
 
+
+    /**
+     * 将Listview中的item和数据进行绑定
+     * @param position  当前的item在listview中的下标
+     * @param convertView item的layout界面视图
+     * @param parent
+     * @return
+     */
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         int itemViewType = getItemViewType(position);

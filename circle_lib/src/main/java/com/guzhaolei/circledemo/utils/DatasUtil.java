@@ -4,6 +4,7 @@ import com.guzhaolei.circledemo.bean.CircleItem;
 import com.guzhaolei.circledemo.bean.CommentItem;
 import com.guzhaolei.circledemo.bean.FavoriteItem;
 import com.guzhaolei.circledemo.bean.User;
+import com.guzhaolei.circledemo.resource.ResourceConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,36 +23,6 @@ public class DatasUtil {
 	public static final String[] CONTENTS = { "", "哈哈", "今天是个好日子", "呵呵", "图不错",
 			"我勒个去" };
 
-	//发布动态的图片路径
-	public static final String[] PHOTOS = {
-			"http://f.hiphotos.baidu.com/image/pic/item/faf2b2119313b07e97f760d908d7912396dd8c9c.jpg",
-			"http://g.hiphotos.baidu.com/image/pic/item/4b90f603738da977c76ab6fab451f8198718e39e.jpg",
-			"http://e.hiphotos.baidu.com/image/pic/item/902397dda144ad343de8b756d4a20cf430ad858f.jpg",
-			"http://a.hiphotos.baidu.com/image/pic/item/a6efce1b9d16fdfa0fbc1ebfb68f8c5495ee7b8b.jpg",
-			"http://b.hiphotos.baidu.com/image/pic/item/a71ea8d3fd1f4134e61e0f90211f95cad1c85e36.jpg",
-			"http://c.hiphotos.baidu.com/image/pic/item/7dd98d1001e939011b9c86d07fec54e737d19645.jpg",
-			"http://f.hiphotos.baidu.com/image/pic/item/f11f3a292df5e0fecc3e83ef586034a85edf723d.jpg",
-			"http://pica.nipic.com/2007-10-17/20071017111345564_2.jpg",
-			"http://pic4.nipic.com/20091101/3672704_160309066949_2.jpg",
-			"http://pic4.nipic.com/20091203/1295091_123813163959_2.jpg",
-			"http://pic31.nipic.com/20130624/8821914_104949466000_2.jpg",
-			"http://pic6.nipic.com/20100330/4592428_113348099353_2.jpg",
-			"http://pic9.nipic.com/20100917/5653289_174356436608_2.jpg",
-			"http://img10.3lian.com/sc6/show02/38/65/386515.jpg",
-			"http://pic1.nipic.com/2008-12-09/200812910493588_2.jpg",
-			"http://pic2.ooopic.com/11/79/98/31bOOOPICb1_1024.jpg" };
-
-	//用户头像路径
-	public static final String[] HEADIMG = {
-			"http://img.wzfzl.cn/uploads/allimg/140820/co140R00Q925-14.jpg",
-			"http://www.feizl.com/upload2007/2014_06/1406272351394618.png",
-			"http://v1.qzone.cc/avatar/201308/30/22/56/5220b2828a477072.jpg%21200x200.jpg",
-			"http://v1.qzone.cc/avatar/201308/22/10/36/521579394f4bb419.jpg!200x200.jpg",
-			"http://v1.qzone.cc/avatar/201408/20/17/23/53f468ff9c337550.jpg!200x200.jpg",
-			"http://cdn.duitang.com/uploads/item/201408/13/20140813122725_8h8Yu.jpeg",
-			"http://p2.gexing.com/G1/M00/DA/44/rBACE1Or-q6DO1B3AAAhdSV6v7o914_200x200_3.jpg?recache=20131108",
-			"http://p1.qqyou.com/touxiang/uploadpic/2013-3/12/2013031212295986807.jpg"};
-
 	//模拟的用户集
 	public static List<User> users = new ArrayList<User>();
 	/**
@@ -68,17 +39,17 @@ public class DatasUtil {
 
 
 	private static int commentId = 0;
-	public static final User curUser = new User("0", "自己", HEADIMG[0]);
+	public static final User curUser = new User("0", "自己", ResourceConfig.HEADIMG[0]);
 
 	//创建模拟的用户集数据
 	static {
-		User user1 = new User("1", "chenmin", HEADIMG[1]);
-		User user2 = new User("2", "陈露", HEADIMG[2]);
-		User user3 = new User("3", "褚倩", HEADIMG[3]);
-		User user4 = new User("4", "DDD", HEADIMG[4]);
-		User user5 = new User("5", "guzhaolei", HEADIMG[5]);
-		User user6 = new User("6", "啦啦啦", HEADIMG[6]);
-		User user7 = new User("7", "这个名字是不是很长，哈哈！因为我是用来测试换行的", HEADIMG[7]);
+		User user1 = new User("1", "chenmin", ResourceConfig.HEADIMG[1]);
+		User user2 = new User("2", "陈露", ResourceConfig.HEADIMG[4]);
+		User user3 = new User("3", "褚倩", ResourceConfig.HEADIMG[3]);
+		User user4 = new User("4", "DDD", ResourceConfig.HEADIMG[2]);
+		User user5 = new User("5", "guzhaolei", ResourceConfig.HEADIMG[5]);
+		User user6 = new User("6", "啦啦啦", ResourceConfig.HEADIMG[6]);
+		User user7 = new User("7", "这个名字是不是很长，哈哈！因为我是用来测试换行的", ResourceConfig.HEADIMG[7]);
 
 		users.add(curUser);
 		users.add(user1);
@@ -130,15 +101,18 @@ public class DatasUtil {
 		return result;
 	}
 
+	//从模拟的图片资源中随机筛选出《=9张的图片展示
 	public static List<String> createPhotos() {
 		List<String> photos = new ArrayList<String>();
-		int size = getRandomNum(PHOTOS.length);
+		//int size = getRandomNum(PHOTOS.length);
+		int size = getRandomNum(ResourceConfig.CONTENT_IMAGE.length);
 		if (size > 0) {
 			if (size > 9) {
 				size = 9;
 			}
 			for (int i = 0; i < size; i++) {
-				String photo = PHOTOS[getRandomNum(PHOTOS.length)];
+				//String photo = PHOTOS[getRandomNum(PHOTOS.length)];
+				String photo = ResourceConfig.CONTENT_IMAGE[getRandomNum(ResourceConfig.CONTENT_IMAGE.length)];
 				if (!photos.contains(photo)) {
 					photos.add(photo);
 				} else {
