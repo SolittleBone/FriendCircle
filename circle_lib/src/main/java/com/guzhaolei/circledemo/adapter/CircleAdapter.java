@@ -195,7 +195,7 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         holder.deleteBtn.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
-                //删除
+                //删除当前的的动态
                 mPresenter.deleteCircle(circleId);
             }
         });
@@ -368,7 +368,7 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         public void onItemClick(ActionItem actionitem, int position) {
             switch (position) {
                 case 0://点赞、取消点赞
-                    if (System.currentTimeMillis() - mLasttime < 700)//防止快速点击操作
+                    if (System.currentTimeMillis() - mLasttime < 700)       //防止快速点击操作
                         return;
                     mLasttime = System.currentTimeMillis();
                     if ("赞".equals(actionitem.mTitle.toString())) {
@@ -388,6 +388,8 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         }
     }
 
+
+    //ICircleViewUpdate的update2DeleteCircle接口的实现
     @Override
     public void update2DeleteCircle(String circleId) {
         for (int i = 0; i < datas.size(); i++) {
@@ -399,6 +401,8 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         }
     }
 
+
+    //ICircleViewUpdate的update2AddFavorite接口的实现
     @Override
     public void update2AddFavorite(int circlePosition) {
         FavoriteItem item = DatasUtil.createCurUserFavortItem();
@@ -406,6 +410,7 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         notifyDataSetChanged();
     }
 
+    //ICircleViewUpdate的update2DeleteFavort接口的实现
     @Override
     public void update2DeleteFavort(int circlePosition, String favortId) {
         List<FavoriteItem> items = getDatas().get(circlePosition).getFavorters();
@@ -418,6 +423,7 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         }
     }
 
+    //ICircleViewUpdate的update2AddComment接口的实现
     @Override
     public void update2AddComment(int circlePosition, int type, User replyUser) {
         CommentItem newItem = null;
@@ -437,6 +443,8 @@ public class CircleAdapter extends BaseAdapter implements ICircleViewUpdate {
         }
     }
 
+
+    //ICircleViewUpdate的update2DeleteComment接口的实现
     @Override
     public void update2DeleteComment(int circlePosition, String commentId) {
         List<CommentItem> items = getDatas().get(circlePosition).getComments();

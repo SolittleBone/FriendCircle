@@ -4,6 +4,8 @@ import com.guzhaolei.circledemo.bean.User;
 import com.guzhaolei.circledemo.mvp.model.CircleModel;
 import com.guzhaolei.circledemo.mvp.model.IDataRequestListener;
 import com.guzhaolei.circledemo.mvp.view.ICircleViewUpdate;
+
+
 /**
  * 
 * @ClassName: CirclePresenter 
