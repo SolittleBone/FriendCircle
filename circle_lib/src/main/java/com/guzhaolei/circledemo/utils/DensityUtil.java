@@ -2,10 +2,11 @@ package com.guzhaolei.circledemo.utils;
 
 import android.content.Context;
 import android.util.DisplayMetrics;
+
 /**
 * @ClassName: DensityUtil 
-* @Description: TODO(这里用一句话描述这个类的作用) 
-* @author guzhaolei
+* @Description:  解决android屏幕的适配问题
+* @author 褚倩
 * @date 2018-7-1 下午4:17:01
  */
 public class DensityUtil {
@@ -20,7 +21,7 @@ public class DensityUtil {
 		return (int) (pxValue / scale + 0.5f);
 	}
 
-	/** 获取手机的密度*/
+	/** 获取手机的密度，解决Android屏幕适配问题*/
 	public static float getDensity(Context context) {
 		DisplayMetrics dm = context.getResources().getDisplayMetrics();
 		return dm.density;

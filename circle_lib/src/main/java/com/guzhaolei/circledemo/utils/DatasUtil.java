@@ -12,8 +12,8 @@ import java.util.Random;
 /**
  * 
 * @ClassName: DatasUtil 
-* @Description: TODO(这里用一句话描述这个类的作用) 
-* @author guzhaolei
+* @Description:  模拟朋友圈动态里面的数据
+* @author 褚倩
 * @date 2018-7-1 下午4:16:21
 *
  */

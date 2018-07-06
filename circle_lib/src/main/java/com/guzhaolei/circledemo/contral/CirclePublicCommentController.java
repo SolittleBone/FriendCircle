@@ -33,6 +33,7 @@ public class CirclePublicCommentController {
     private int mCommentPosition;
     private ListView mListView;
     private Context mContext;
+
     /**
      * 选择动态条目的高
      */
@@ -118,9 +119,9 @@ public class CirclePublicCommentController {
     }
 
     public void handleListViewScroll() {
-        int keyH = CommonUtils.keyboardHeight;//键盘的高度
-        int editTextBodyH = ((HeightComputable) mContext).getEditTextBodyHeight();//整个EditTextBody的高度
-        int screenlH = ((HeightComputable) mContext).getScreenHeight();//整个应用屏幕的高度
+        int keyH = CommonUtils.keyboardHeight;                                          //键盘的高度
+        int editTextBodyH = ((HeightComputable) mContext).getEditTextBodyHeight();      //整个EditTextBody的高度
+        int screenlH = ((HeightComputable) mContext).getScreenHeight();                 //整个应用屏幕的高度
         int listviewOffset = screenlH - mSelectCircleItemH - keyH - editTextBodyH;
         Log.d(TAG, "offset=" + listviewOffset + " &mSelectCircleItemH=" + mSelectCircleItemH + " &keyH=" + keyH + " &editTextBodyH=" + editTextBodyH);
         if (mCommentType == ICircleViewUpdate.TYPE_REPLY_COMMENT) {
